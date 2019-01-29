@@ -1,0 +1,38 @@
+/* Modify */
+
+.hidden {
+    height: 0;
+    visibility: hidden;
+}
+
+.visible {
+    height: 60px;
+    visibility: hidden;
+}
+
+.none {
+    display: none;
+}
+
+.fade-out {
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity .5s, font-size .5s;
+}
+
+.opacity {
+    opacity: 0;
+    pointer-events: none;
+
+}
+
+.fade-in {
+    pointer-events: visible;
+    opacity: 1;
+    transition: opacity .5s;
+}
+
+.filter {
+    filter: grayscale(100%);
+}
+

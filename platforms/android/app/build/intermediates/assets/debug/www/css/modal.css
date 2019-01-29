@@ -1,0 +1,223 @@
+/* Modal */
+
+.modal {
+    position: fixed;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 99999;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal__model {
+    position: relative;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    margin-top: 40%;
+    padding: 1em 0 0 1.5em;
+    font-size: 1.1em;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    border: none;
+}
+
+.modal__model h1 {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 5px;
+    padding-bottom: .5em;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+
+.modal__model-main {
+    position: relative;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.modal__options {
+    width: 100%;
+    padding: 1em 0;
+    font-size: 1.1em;
+    font-weight: 400;
+    text-align: start;
+    border-bottom: 1px solid rgba(211, 211, 211, .5);
+}
+
+.modal__input {
+    font-size: 1.2em;
+    font-weight: 600;
+    text-indent: 10px;
+    color: #032e49;
+    background-color: rgb(254, 254, 254);
+    border: none;
+    border-bottom: 1px solid #054265;
+    outline: none;
+}
+
+.modal__options button {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: coral;
+}
+
+/* Modal price */
+.modal__model-shop {
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+    height: 230px;
+    margin-top: 80px;
+    background-color: rgb(255, 255, 255);
+}
+
+.modal__model-main-shop {
+    position: relative;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+.modal__price {
+    position: relative;
+    justify-content: flex-end;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+}
+
+.modal__price span {
+    position: relative;
+    font-size: 4em;
+    font-weight: 600;
+    text-align: center;
+    color: #001f31;
+}
+
+.modal__model-main-shop input {
+    position: relative;
+    width: 55%;
+    font-size: 3.2em;
+    font-weight: 600;
+    text-align: right;
+    text-indent: 5px;
+    color: #001f31;
+    border: none;
+}
+
+.modal__next {
+    position: relative;
+    justify-content: flex-end;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+}
+
+.modal__next button {
+    position: relative;
+    background-image: url('../img/play-button.svg');
+}
+
+.modal__model-border {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1em .5em;
+    background-color: rgb(0, 183, 255);
+}
+
+.modal__model-border span {
+    max-width: 100%;
+    width: 100%;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.644);
+    color: #fff;
+    word-wrap: break-word;
+}
+
+/* Loader */
+.modal-loader {
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 99999;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/* Modal about */
+.modal-about {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.modal-about__img {
+    max-width: 500px;
+    width: 80%;
+    filter: drop-shadow(1px 1px 1px #000)
+}
+
+.modal-about__header {
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2%;
+    width: 100%;
+    height: 56px;
+    background-color: rgb(255, 255, 255);
+}
+
+.modal-about-info {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    padding: 4%;
+    color: #fff;
+    background-color: rgb(2, 29, 44);
+}
+
+.modal-about-info__version { 
+    font-size: 1.5em;
+    opacity: .5;
+}
+
+.modal-about-info p {
+    font-size: 1em;
+    text-align: center;
+    line-height: 2em;
+}
+
+.modal-about-info a{
+    text-decoration: none;
+    color: rgb(0, 204, 255);
+}
+
+.modal-about-info span {
+    text-align: center;
+}
+
+.modal-about-info__dev{
+    justify-content: space-around;
+    max-width: 500px;
+    font-size: .8em;
+    text-align: center;
+    opacity: .5;
+}
+
+.about-header__icon-back {
+    background-image: url('../img/arrow-blue.svg');
+}

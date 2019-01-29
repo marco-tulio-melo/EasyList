@@ -1,0 +1,59 @@
+/* Menu */
+
+.nav__main {
+    position: fixed;
+    width: 100vw;
+    top: calc(100vh - 56px);
+    background-color: #044266;
+    z-index: 99999;
+    box-shadow: -2px -4px 20px 3px rgba(255, 255, 255, 0.4);
+}
+
+.nav__menus {
+    justify-content: center;
+    width: 100%;
+    height: 56px;
+    background-color: #044266;
+}
+
+.nav__menu {
+    justify-content: space-around;
+    align-items: center;
+    max-width: 200px;
+    width: 33.33%;
+    padding: 8px 12px 5px 12px;
+    padding: 1%;
+    font-size: .6em;
+    text-align: center;
+    color: #fff;
+    z-index: 99998;
+    opacity: .6;
+}
+
+.nav__menu-icon{
+    justify-content: space-between;
+    align-items: center;
+    width: 40px;
+    height: 35px;
+}
+
+.nav__home {
+    background-image: url('../img/home.svg');
+
+}
+
+.nav__record {
+    background-image: url('../img/book.svg');
+
+}
+
+.nav__settings {
+    background-image: url('../img/settings.svg');
+
+}
+
+.nav__menu--active{
+    font-size: .7em;
+    opacity: 1;
+    transition:opacity .2s,font-size .2s ease-in-out;
+}

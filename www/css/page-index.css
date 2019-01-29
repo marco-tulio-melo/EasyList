@@ -1,0 +1,32 @@
+/* Page Index */
+
+/* Paginas do menu */
+
+.page-menu {
+    position: relative;
+    max-width: 100vw ;
+    width: 100vw;
+}
+
+.pages-menu{
+    width: 600vw;
+    margin-top:60px; 
+    transition: margin-left .3s ease-in-out;  
+}
+
+.page-menu-box{
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.title-pages-index {
+    width: 100%;
+    padding: 5%;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: center;
+    color:#054265;
+}
+
+

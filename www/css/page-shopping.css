@@ -1,0 +1,41 @@
+/* Page-Shopping */
+
+.list__item-shop {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: .7em 2.5%;
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+   border-bottom: 1.5px solid rgba(255, 255, 255, 0.1);
+}
+
+.list__item-name-shop {
+    max-width: 48%;
+    width: 48%;
+    margin-right: 2%;
+    text-align: start;
+    word-wrap: break-word;
+}
+
+.list__qtd-shop {
+    justify-content: flex-start;
+    align-items: center;
+    width: 12%;
+    margin-right: 2%;
+    font-size: .8em;
+    color: rgba(255, 255, 255, 0.527);
+}
+
+.list__price-shop{
+    justify-content: flex-end;
+    align-items: center;
+    width: 25%;
+    font-size: .8em;
+    color: rgb(255, 255, 255);
+} 
+
+.list__item-shop--active {
+    background-color: rgb(30, 161, 111);
+}
+    

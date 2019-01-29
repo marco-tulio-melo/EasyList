@@ -1,0 +1,59 @@
+/* Record */
+
+.record-box{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 76px;
+}
+
+.record-block{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2%;
+}
+
+.record-block__record{
+    width: 100%;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+    border: solid 1px #054265;
+}
+
+.record__date{
+    justify-content: center;
+    align-items: center;
+    height: 2.5em;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px  rgb(0, 0, 0);
+    color: #fff;
+    background-color: #054265;
+}
+
+.record__data{
+    justify-content: space-around;
+    align-items: center;
+    height: 2em;
+    color: #054265;
+    background-color: rgba(255, 255, 255, 0.637);
+}
+
+.record__clear{
+justify-content: center;
+align-items: center;
+width: 250px;
+height: 56px;
+margin-top: 20px;
+color: #fff;
+background-color: rgb(255, 106, 0);
+border:none;
+border-radius: 25px;
+box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.383);
+}
+
+.record__clear a{
+    font-size: 1.2em;
+    color: #fff;
+}
+

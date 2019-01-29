@@ -1,0 +1,1 @@
+const path=require('path');module.exports=((a)=>{try{return require(path.resolve(a.opts.projectRoot,'node_modules','webpack'))}catch(a){return require('webpack')}})();

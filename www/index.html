@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EasyList</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/icon.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/spotligh.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/list.css">
+    <link rel="stylesheet" href="css/page-index.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/record.css">
+    <link rel="stylesheet" href="css/setting.css">
+    <link rel="stylesheet" href="css/page-list.css">
+    <link rel="stylesheet" href="css/page-shopping.css">
+    <link rel="stylesheet" href="css/page-create-item.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/change-amount.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/modify.css">
+
+</head>
+
+<body class="column" onselectstart="return false">
+
+    <!----------------------------- Page Index ---------------------------------->
+    <div class="container row" id="js-page-index">
+
+        <!-- Header -->
+        <header class="header-menu row" id="js-headerMenu">
+
+            <span class=" header-menu__title-main" id="js-headerMenuText">EasyList</span>
+
+            <div class="header-dropdown column">
+                <span class="header__menu-dropdown icon-small"></span>
+
+                <div class="header__dropdown-content" id="js-about">
+                    <p>Sobre o EasyList</p>
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- Paginas do menu -->
+        <div class="pages-menu row " id="js-pages-menu">
+
+            <!-- Home Page -->
+            <section class="page-menu fade-in" id="js-home-page">
+
+                <div class="page-menu-box page-menu-home">
+
+                    <div class="home-box column" id="js-home-box">
+
+                        <h1 class="title-pages-index">Listas Prontas</h1>
+
+                        <!-- Listas prontas -->
+                        <div class="list-ready">
+
+                            <ul class="list-ready__lists" id="js-list-full"></ul>
+                        </div>
+
+                    </div>
+                    <!-- Listas em branco -->
+                    <div class="spotligh-empty-box column none " id="js-list-empty">
+                        <div class="spotligh-empty column">
+                            <span class="spotligh-list icon-very-big"></span>
+                            <span>Nenhuma lista encontrada</span>
+                        </div>
+                    </div>
+
+                    <!-- Criar lista -->
+                    <div class="button-plus-add row ">
+                        <a href="" class="icon-big" id="js-plus-add-list"></a>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Record Page -->
+            <section class="page-menu fade-out" id="js-record-page">
+
+                <div class="page-menu-box page-menu-record">
+
+                    <!-- Registros de compras -->
+                    <div class="record-box column" id="js-record-box">
+
+                        <h1 class="title-pages-index">Registro de compras</h1>
+
+                        <ul class="record-block column" id="js-record-page__block"></ul>
+
+                        <div class="record__clear column">
+                            <a href="#" id="js-clear-record">Apagar registros</a>
+                        </div>
+
+                    </div>
+
+                    <!-- Registro em branco -->
+                    <div class="spotligh-empty-box column" id="js-record-empty">
+
+                        <div class="spotligh-empty column">
+                            <span class="spotligh-record icon-very-big"></span>
+                            <span>Nenhum registro encontrado</span>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <!--Setting Page-->
+            <section class="page-menu fade-out" id="js-setting-page">
+
+                <div class="page-menu-box page-menu-setting row">
+
+                    <div class="setting-box column">
+                        <h1 class="title-pages-index">Configurações</h1>
+
+                        <!--Configurações-->
+                        <div class="setting-block column">
+                            <form class="column">
+
+                                <div class="setting-options column">
+                                    <label for="vibration" class="vibration setting row">
+                                        <span>Vibração: &nbsp;</span>
+                                        <label for="vibration">Sim<input type="radio" name="vibration" id="js-vibration-on"></label>
+                                        &nbsp;
+                                        <label for="vibration">Não<input type="radio" name="vibration" id="js-vibration-off"></label>
+                                    </label>
+                                </div>
+
+                                <button type="button" class="restore" id="js-restore">Restaurar Easylist</button>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Menu -->
+        <footer class="nav__main">
+
+            <nav class="nav__menus row">
+
+                <!-- Home Menu -->
+                <div class="nav__menu column " id="js-home" title="Listas Prontas">
+                    <a href="#" class="nav__home icon-menu "></a>
+                    <span>Home</span>
+                </div>
+
+                <!-- Record Menu-->
+                <div class="nav__menu column" id="js-record" title="Registros">
+                    <a href="#" class="nav__record icon-menu "></a>
+                    <span>Registro</span>
+                </div>
+
+                <!-- Settings Menu-->
+                <div class="nav__menu column" id="js-setting" title="Configurações">
+                    <a href="#" class="nav__settings icon-menu "></a>
+                    <span>Configuração</span>
+                </div>
+
+            </nav>
+
+        </footer>
+
+    </div>
+
+
+    <!------------------------------ Page List ---------------------------------->
+    <div class="container column none " id="js-page-list">
+
+        <!-- Header -->
+        <header class="header-menu row  header-list">
+
+            <div class="header-menu row" id="js-headerMenu">
+                <a href="#" class="header__icon-back icon-small" id="js-back-page-list"></a>
+                <span class="header-menu__title" id="title-page-list">Nova Lista</span>
+                <a href="#" class="header__icon-save opacity icon-small" id="js-save-list"></a>
+            </div>
+
+        </header>
+
+        <!-- List -->
+        <section class="list column">
+            <ul class="list__all-itens column">
+                <li class="list__category column" id="js-list"></li>
+            </ul>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer row">
+
+            <div class="footer__add row">
+                <button type="submit" id="js-add-item">Adicionar
+                    item</button>
+            </div>
+
+        </footer>
+
+    </div>
+
+    <!---------------------------- Page Shopping -------------------------------->
+    <div class="container none" id='js-page-shopping'>
+
+        <!-- Header -->
+        <header class="header-menu row header-list">
+
+            <div class="header-menu row">
+                <a href="#" class="header__icon-back icon-small" id="js-back-page-shopping"></a>
+                <span class="header-menu__title" id="js-title-shop">Comprar</span>
+                <a href="#" class="header__add-shop icon-small" id="js-add-item-shop"></a>
+            </div>
+
+        </header>
+
+        <!--Shopping lista-->
+        <section class="list column ">
+
+            <ul class="list__all-itens  column">
+                <li class="list__category column" id="js-list-shop"></li>
+            </ul>
+
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer row column">
+
+            <div class="footer-shop row">
+
+                <div class="footer-shop__total row">
+                    <span>R$ &nbsp</span><span id="js-price-total">00,00</span>
+                </div>
+
+                <button type="submit" class="footer-shop__finalize" id="js-finalize-shop">Finalizar</button>
+            </div>
+
+        </footer>
+
+    </div>
+
+    <!--------------------------- Page Create Item ------------------------------>
+    <div class="container column none " id="js-page-create-item">
+
+        <!-- Header -->
+        <header class="header-menu header-list row">
+
+            <div class="header-menu row">
+                <a href="#" class="header__icon-back icon-small" id="js-back-create-item"></a>
+                <span class="header-menu__title" id="js-title-create">Criar Item</span>
+                <a href="#" class="icon-small"></a>
+            </div>
+
+        </header>
+
+        <!-- Formulario para criar novo item -->
+        <section class="box__form column">
+            <form class="form column" id="js-save-item">
+
+                <!-- Nome do item-->
+                <div class="form__forms row">
+                    <input type="text" maxlength="18" minlength="1" placeholder="Item *" class="form__input" id="js-input-name"
+                        required>
+                </div>
+
+                <div class="form__forms row">
+
+                    <!--Quantidade -->
+                    <div class="form__amount column">
+                        <div class="form__amount-unit row ">
+                            <input type="number" name="amount" class="form__input" placeholder="Qtd " id="js-input-qtd" />
+                            <select class="form__select" id="js-select-measure">
+                                <option>Kg</option>
+                                <option>g</option>
+                                <option>L</option>
+                                <option>ml</option>
+                                <option>un</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!--Unidade-->
+                    <div class="form__unit column ">
+                        <div class="change-amount-items row">
+                            <button class="amount-items minus-items icon-amount minus-button"></button>
+                            <span id="js-span-unit">1</span>
+                            <button class="amount-items plus-items icon-amount plus-button"></button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--Categoria-->
+                <div class="form__forms row">
+                    <div class="form__selected column">
+
+                        <div class="form__selected-select row">
+                            <select name="category" class="form__select-category" id="js-select-category"></select>
+                            <!--Adicionar categoria-->
+                            <div class="form__add row">
+                                <button class="icon-amount" id="js-add-category"></button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--Salvar Item-->
+                <div class="form__save row">
+                    <button type="submit" id="addItem">Salvar</button>
+                </div>
+
+            </form>
+        </section>
+
+    </div>
+
+    <!--------------------------------- Modal ----------------------------------->
+    <section class="modal column none" id="js-modal"></section>
+    <section class="modal-loader column none" id="js-modal-loader">
+        <img class="icon-loader" src="img/loader.svg" />
+    </section>
+
+    <!------------------------------ Script ------------------------------------->
+
+    <script src="cordova.js"></script>
+
+    <script src="dist/bundle.js"></script>
+
+</body>
+
+</html>
