@@ -4,6 +4,7 @@ import {controllerInstancie} from './controller/Controller';
 const controller = controllerInstancie();
 
 document.addEventListener("backbutton", controller.backButtonDevice.bind(controller), false);
+
 $('#js-plus-add-list').onclick = controller.buttonCreateList.bind(controller);
 $('#js-clear-record').onclick = controller.buttonClearRecord.bind(controller);
 $('#js-back-page-list').onclick = controller.buttonBackList.bind(controller);
